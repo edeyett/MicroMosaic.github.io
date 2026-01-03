@@ -4,6 +4,8 @@ title: Services
 lede: "Capabilities designed to hold analysis, strategy, and communication together."
 permalink: /services/
 ---
+MicroMosaic is not a multi-vendor relay. It’s one scientist carrying an integrated practice so you don’t have to keep re-explaining the science. Choose a single pillar, mix them, or engage fractionally—the collaboration stays rigorous either way.
+
 ## Data, Bioinformatics & Analysis
 
 MicroMosaic approaches biological data as living context. Every analysis includes interpretation, collaboration with wet-lab partners, and figures ready for manuscripts, decks, or stakeholders.
@@ -29,6 +31,7 @@ Communication is participatory, not performative. MicroMosaic turns complex resu
 - Podcast and audio development, interviews, and sponsored storytelling
 - Editorial support for journals, manuscripts, SOPs, and grant narratives
 - Workshops on data literacy, interpretation, and collaborative sense-making
+- Event planning and production support for science-forward gatherings
 
 **Collaboration looks like** co-developing outlines, scripts, or briefs with your SMEs, layering metaphor only when it clarifies, and providing research-backed storytelling assets.
 

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Building Scalable Microbial Genome Analysis Infrastructure · MicroMosaic</title>
+<meta name="description" content="&lt;p&gt;&lt;em&gt;Achieving ~90% reduction in genome analysis time through cloud‑native, end‑to‑end bioinformatics architecture&lt;/em&gt;&lt;/p&gt;">
+<link rel="stylesheet" href="/assets/css/main.css">
+<link rel="icon" type="image/png" href="/branding/favicon_micro_mosaic.png">
+
+</head>
+<body class="">
+  <header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="/">
+      <img src="/branding/logo.png" alt="MicroMosaic logo" class="brand-logo">
+      <div class="brand-text">
+        <span class="brand-mark">MicroMosaic</span>
+        <span class="brand-sub">Elizabeth Deyett, PhD</span>
+      </div>
+    </a>
+    <nav class="site-nav">
+      <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+      <ul>
+        
+        <li>
+          <a href="/">Home</a>
+        </li>
+        
+        <li>
+          <a href="/services/">Services</a>
+        </li>
+        
+        <li>
+          <a href="/case-studies/">Case Studies</a>
+        </li>
+        
+        <li>
+          <a href="/about/">About</a>
+        </li>
+        
+        <li>
+          <a href="/contact/">Contact</a>
+        </li>
+        
+      </ul>
+    </nav>
+  </div>
+</header>
+
+  <main class="page-content">
+    <section class="section">
+  <div class="container narrow">
+    <p class="case-tag">Case Study</p>
+    <h1>Building Scalable Microbial Genome Analysis Infrastructure</h1>
+    <p class="lede">Achieving ~90% reduction in genome analysis time through cloud-native, end-to-end bioinformatics architecture</p>
+    
+    <dl class="case-meta">
+      
+      <div>
+        <dt>Context</dt>
+        <dd>Environmental biotech building a microbe-first R&D and biobanking program</dd>
+      </div>
+      
+      
+      <div>
+        <dt>Pillars</dt>
+        <dd>Data, Bioinformatics & Analysis, Data Strategy, Governance & Leadership</dd>
+      </div>
+      
+    </dl>
+    
+    <p><em>Achieving ~90% reduction in genome analysis time through cloud‑native, end‑to‑end bioinformatics architecture</em></p>
+
+<h2 id="executive-summary">Executive Summary</h2>
+
+<p>An early‑stage environmental biotechnology company set out to build a microbe‑first research and biobanking program spanning bacteria and fungi, multiple sequencing technologies, and long‑term strain discovery for bioremediation. With no scientific, data, or computational infrastructure beyond basic enterprise tools and no internal expertise beyond a single scientist, the risk of fragmented, slow, and irreproducible analysis was high. I designed and implemented a cloud‑native, fully automated bioinformatics platform that transformed genome analysis from a manual bottleneck into scalable scientific infrastructure—reducing analysis time by ~90%, enabling the parallel analysis of 100 fungal genomes in a single day, and establishing a durable foundation linking physical biobanks to genomic intelligence.</p>
+
+<hr />
+
+<h2 id="context">Context</h2>
+
+<p>An early-stage environmental biotechnology company was preparing to build a microbe-first R&amp;D program focused on bioremediation. The long-term vision included metagenomics, whole genome sequencing (WGS), amplicon sequencing, and comparative genomics across both bacterial and fungal organisms. The goal was not only to identify and characterize microbes, but to build a living biobank that tightly linked <em>physical freezer inventory</em> (live isolates) with <em>digital genomic intelligence</em>—so strains with promising functional traits could be efficiently rediscovered, compared, and deployed over time.</p>
+
+<p>At the time, there was <strong>no existing data or bioinformatics infrastructure</strong>. There was no established workflow, no compute environment, no database standards, and no in-house expertise beyond my role. I was effectively the entire data team, supported by a single part-time contract bioinformatician working asynchronously in a different time zone. Upper management provided no technical guidance or operational support; this system needed to be designed, built, and maintained end-to-end from scratch.</p>
+
+<p>Recognizing that downstream science would fail without upstream standardization, we made a strategic decision to invest early in reproducible, scalable bioinformatics infrastructure before experimental throughput increased.</p>
+
+<hr />
+
+<h2 id="problem">Problem</h2>
+
+<p>Without automation and standardization, microbial genome analysis would have been:</p>
+
+<ul>
+  <li><strong>Slow and manual</strong> – tool-by-tool execution, one genome at a time</li>
+  <li><strong>Error-prone and inconsistent</strong> – ad hoc parameters, undocumented steps</li>
+  <li><strong>Impossible to scale</strong> – fungal genomes, metagenomes, and long-read data dramatically increase complexity</li>
+  <li><strong>Difficult to reuse</strong> – results scattered across folders, not database- or LIMS-ready</li>
+</ul>
+
+<p>In practical terms, analyzing a <em>single</em> genome without a robust pipeline typically takes <strong>half a day to a full day of hands-on work</strong>. At the scale the company envisioned (dozens to hundreds of genomes across organisms and sequencing technologies), this approach would have required multiple full-time bioinformaticians and still failed to deliver consistent, reproducible outputs.</p>
+
+<p>There was also a larger strategic risk: without standardized identifiers, reports, and metadata, the company would be unable to reliably connect genomic results back to physical isolates in freezers—undermining the entire concept of a functional microbial biobank.</p>
+
+<hr />
+
+<h2 id="what-i-built">What I Built</h2>
+
+<p>I designed and implemented a <strong>modular, cloud-native bioinformatics platform</strong> centered around <strong>four production-grade Nextflow pipelines</strong>, capable of handling bacterial <em>and</em> fungal data across multiple sequencing modalities.</p>
+
+<h3 id="core-architecture">Core Architecture</h3>
+
+<ul>
+  <li><strong>Workflow engine:</strong> Nextflow (chosen for reproducibility, community support, and rapid development)</li>
+  <li><strong>Compute:</strong> AWS Batch for dynamic resource allocation, horizontal/vertical scaling, and cost efficiency</li>
+  <li><strong>Storage:</strong> Amazon S3 with standardized folder structures for long-term data integrity and downstream databasing</li>
+  <li><strong>Version control:</strong> GitHub for collaborative development and traceability</li>
+  <li><strong>Environments:</strong> Conda + Docker to lock tool versions and ensure reproducibility</li>
+  <li><strong>Networking:</strong> Full AWS VPC setup, routing, and permissions configured from scratch</li>
+</ul>
+
+<h3 id="pipelines-built">Pipelines Built</h3>
+
+<ol>
+  <li>
+    <p><strong>Whole Genome Sequencing (WGS)</strong></p>
+
+    <ul>
+      <li>Supports bacteria <em>and</em> fungi</li>
+      <li>Handles Illumina short reads, Nanopore long reads, PacBio long reads, and hybrid assemblies</li>
+      <li>
+        <p>Steps:</p>
+
+        <ul>
+          <li>Read QC and cleaning</li>
+          <li>Assembly (technology-aware)</li>
+          <li>Assembly QC</li>
+          <li>Gene calling (Prokka, Prodigal, Augustus)</li>
+          <li>Functional annotation (CAZy, antiSMASH, EggNOG, InterPro, Barrnap, tRNAscan)</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Metagenomics</strong></p>
+
+    <ul>
+      <li>Assembly and binning</li>
+      <li>Assembly QC</li>
+      <li>Gene calling and annotation</li>
+      <li>Parallel generation of two complementary HTML reports: (1) an <em>amplicon-like</em> community-level report derived from metagenomic reads, and (2) a MAGs-focused report analogous to the WGS report, designed to summarize, compare, and interpret multiple metagenome-assembled genomes within a single analysis</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Amplicon Sequencing</strong></p>
+
+    <ul>
+      <li>DADA2-based workflow wrapped in Nextflow</li>
+      <li>Alpha and beta diversity</li>
+      <li>Taxonomic classification</li>
+      <li>Community composition visualizations</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Comparative Genomics</strong></p>
+
+    <ul>
+      <li>Pulls assemblies and annotations directly from S3</li>
+      <li>Works across WGS and metagenome-derived bins</li>
+      <li>
+        <p>Performs:</p>
+
+        <ul>
+          <li>ANI calculations</li>
+          <li>Phylogenetic tree construction</li>
+          <li>MultiQC summaries across strains</li>
+          <li>Annotation-level comparisons</li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ol>
+
+<h3 id="design-highlights">Design Highlights</h3>
+
+<ul>
+  <li>Species-aware logic for <strong>fungal vs bacterial</strong> differences in QC, taxonomy, gene calling, databases, and resource allocation</li>
+  <li>Config-driven parameter tuning with command-line overrides</li>
+  <li>Fully modular design enabling reuse and extension</li>
+  <li>One-line execution for end users using standardized input files capturing essential sample metadata (e.g., file locations, sample names, organism type), ensuring consistent, auditable, and scalable analysis</li>
+</ul>
+
+<h3 id="reporting--data-integration">Reporting &amp; Data Integration</h3>
+
+<p>Each pipeline generated <strong>interactive HTML reports</strong> with:</p>
+
+<ul>
+  <li>Circos genome plots</li>
+  <li>Assembly QC statistics</li>
+  <li>Taxonomic classification (reported across multiple classifiers for cross-tool agreement)</li>
+  <li>Annotation summaries with searchable tables</li>
+  <li>Embedded explanatory language describing what each section means</li>
+</ul>
+
+<p>Reports were designed for <strong>wet-lab scientists, managers, and external collaborators</strong>.</p>
+
+<p>All outputs were integrated into a <strong>LIMS/ELN system</strong> that also housed a digital freezer inventory. Standardized naming conventions and shared identifiers ensured that <em>physical isolates, genomic data, and analytical results lived in the same system</em>—making future strain selection and comparison trivial from a data architecture standpoint.</p>
+
+<hr />
+
+<h2 id="outcome">Outcome</h2>
+
+<ul>
+  <li><strong>~90% reduction in analysis time</strong> compared to manual execution</li>
+  <li><strong>100 fungal genomes analyzed in a single day</strong> using parallelization and optimized resource management</li>
+  <li>Near hands-off operation once launched</li>
+  <li>
+    <p>Analysis costs on the order of:</p>
+
+    <ul>
+      <li>~$15 per bacterial genome</li>
+      <li>~$40 per fungal genome (depending on configuration and sequencing depth)</li>
+    </ul>
+  </li>
+  <li>
+    <p>Successfully run not only by me, but by:</p>
+
+    <ul>
+      <li>A collaborating bioinformatician</li>
+      <li>Multiple trained users, including undergraduate researchers and a bench scientist</li>
+    </ul>
+  </li>
+</ul>
+
+<p>The system was validated using reference genomes prior to experimental samples, and taxonomic classifications were cross-checked across 2–3 independent tools to ensure accuracy and consistency.</p>
+
+<p>This infrastructure supported grant timelines, was showcased at <strong>three conferences</strong>, and formed the basis of an <strong>invited talk at the Seventh International Symposium on Bioremediation and Environmental Biotechnology</strong>.</p>
+
+<hr />
+
+<h2 id="why-it-mattered">Why It Mattered</h2>
+
+<p>This work transformed genome analysis from a fragile, manual bottleneck into <strong>durable scientific infrastructure</strong>. It demonstrated that:</p>
+
+<ul>
+  <li>Small teams can operate at enterprise-scale throughput with the right systems</li>
+  <li>Early investment in standardization prevents years of downstream technical debt</li>
+  <li>Bioinformatics pipelines are not just analytical tools, but <em>organizational memory</em></li>
+</ul>
+
+<p>Although organizational follow-through ultimately limited downstream scientific impact, the platform itself proved that microbial discovery at scale is achievable, affordable, and reproducible when designed intentionally.</p>
+
+<p>For me personally, building this system reduced burnout, enabled focus on higher-level scientific questions, and reaffirmed the value of <strong>systems-level thinking, careful architecture, and clear communication</strong>—principles that now define my freelance and consulting work through MicroMosaic.</p>
+
+<hr />
+
+<h2 id="tech-stack-at-a-glance">Tech Stack at a Glance</h2>
+
+<p><strong>Workflow &amp; Reproducibility</strong>
+Nextflow · GitHub · Conda · Docker</p>
+
+<p><strong>Cloud &amp; Infrastructure</strong>
+AWS Batch · Amazon EC2 · Amazon S3 · AWS VPC/IAM</p>
+
+<p><strong>Sequencing Modalities Supported</strong>
+Illumina (short‑read) · Nanopore (long‑read) · PacBio (long‑read) · Hybrid assemblies</p>
+
+<p><strong>Core Bioinformatics (Representative Tools)</strong>
+Read QC: FastQC · fastp · Trimmomatic
+Assembly: SPAdes · metaSPAdes · Flye · Unicycler
+Gene Calling: Prokka · Prodigal · Augustus
+Annotation: eggNOG · InterPro · antiSMASH · CAZy · Barrnap · tRNAscan
+Taxonomy: Sourmash · Centrifuge · GTDB (used in complementary combinations to assess and report cross‑tool agreement)</p>
+
+<p><strong>Reporting &amp; Visualization</strong>
+HTML/Markdown reports · Interactive Plotly‑based visualizations · Searchable tables</p>
+
+<p><strong>Data Integration</strong>
+LIMS / ELN systems · SQL databases (Amazon Redshift) · Standardized metadata &amp; naming conventions</p>
+
+    <a class="cta" href="/contact/">Start a conversation</a>
+  </div>
+</section>
+
+  </main>
+  <footer class="site-footer">
+  <div class="container footer-inner">
+    <div>
+      <p class="footer-title">MicroMosaic</p>
+      <p>Science studio for bioinformatics, data strategy, and science communication.</p>
+    </div>
+    <div class="footer-contact">
+      <p><strong>Email:</strong> <a href="mailto:hello@micromosaic.studio">hello@micromosaic.studio</a></p>
+      <p><strong>Based in:</strong> Remote / Eastern Time · Working across climates, labs, and leadership teams</p>
+    </div>
+  </div>
+  <p class="copyright">© 2026 MicroMosaic. All rights reserved.</p>
+</footer>
+<script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const navList = document.querySelector('.site-nav ul');
+  if (navToggle && navList) {
+    navToggle.addEventListener('click', () => {
+      navList.classList.toggle('open');
+    });
+  }
+</script>
+
+</body>
+</html>

@@ -10,7 +10,7 @@ Email is the fastest way to reach MicroMosaic. Share context, constraints, and t
 
 - **Email:** [{{ site.email }}](mailto:{{ site.email }})
 - **Typical response time:** 2–3 business days
-- **Location:** Remote (Pacific Time) with global collaborators
+- **Location:** Remote (Eastern Time) with global collaborators
 
 ## What to include (if you can)
 

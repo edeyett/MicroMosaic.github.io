@@ -1,0 +1,17 @@
+Primary Website Introduction
+
+Elizabeth Deyett, PhD is a microbial bioinformatician, data strategist, and science communicator who helps organizations make sense of complex biological data — without stripping it of meaning, context, or integrity.
+
+With over a decade of experience across environmental microbiology, genomics, cloud-native bioinformatics, and data governance, Elizabeth works at the intersection of analysis, strategy, and storytelling. She is known for building scalable, reproducible systems and for translating results into narratives, visuals, and decisions that scientists, leaders, and stakeholders can actually use.
+
+What sets Elizabeth apart is not just technical depth — spanning bacterial and fungal genomics, metagenomics, experimental design, and enterprise-grade data infrastructure — but how she works. Her approach is collaborative, human-centered, and deeply intentional. She treats interpretation as a shared process, communication as a responsibility, and data as something that should empower teams rather than mystify them.
+
+Clients work with Elizabeth when they need more than analysis in isolation: when they want a thoughtful scientific partner who can design systems, surface insight, communicate clearly across audiences, and hold rigor, creativity, and care in the same room.
+
+Short Version (Homepage / Hero Section)
+
+Elizabeth Deyett, PhD helps organizations turn complex microbial and biological data into clear insight, credible decisions, and compelling scientific narratives. A microbial bioinformatician, data strategist, and science communicator, she brings deep technical expertise together with rare clarity, creativity, and collaborative leadership — so science can move forward with confidence. 
+
+Ultra-Short Version (Cards, Bios, Intros)
+
+Elizabeth Deyett, PhD is a microbial bioinformatics strategist and science communicator who bridges rigorous analysis, thoughtful data systems, and clear, human-centered scientific communication — helping teams understand their data and act on it with confidence.

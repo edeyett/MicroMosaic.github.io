@@ -1,41 +1,47 @@
 ---
 layout: page
 title: About MicroMosaic
-lede: "A science studio built to keep analysis, meaning, and communication in the same room."
+lede: "MicroMosaic is the studio practice of Elizabeth Deyett, PhD—microbial ecologist, data strategist, and science communicator."
 permalink: /about/
+body_class: about-page
 ---
-## Core Identity
+## Meet Elizabeth
 
-MicroMosaic is a freelance science studio operating at the intersection of microbiology, bioinformatics, data strategy, and science communication. The practice exists to help teams understand, trust, and act on complex biological data without stripping away context or ethics.
+<div class="about-layout">
+  <div class="about-photo">
+    <img src="{{ '/branding/portraits/4.png' | relative_url }}" alt="Portrait of Elizabeth Deyett">
+  </div>
+  <div class="about-highlight teal align-right">
+    <p>I’m a microbial ecologist with a PhD in Genetics, Genomics & Bioinformatics, and my home base has always been environmental microbiology. Field work taught me to listen to ecosystems; graduate training gave me the tools to decode genomes; industry engagements showed me how fragile data culture can be when those threads are disconnected. MicroMosaic is the studio where I keep them together for organizations that want depth without hiring three different consultants.</p>
+  </div>
+</div>
 
-- **Mission:** Help organizations turn complex biological data into clear insight, credible decisions, and compelling scientific narratives.
-- **Positioning:** Hybrid scientific partner—analysis, interpretation, and translation under one roof.
-- **Values:** Rigor before rhetoric, clarity without condescension, ecological awareness, and human-centered science.
+## What MicroMosaic Stands For
 
-## Working Principles
+<div class="about-highlight golden align-left">
+  <ul>
+    <li><strong>Scientific integrity stays intact.</strong> If rigor or ethics are at risk, we pause instead of polishing the wrong answer.</li>
+    <li><strong>Microbes are collaborators.</strong> Language, visuals, and strategy keep ecological context in view.</li>
+    <li><strong>Clarity belongs to everyone.</strong> Research teams, executives, and community stakeholders all deserve the full picture.</li>
+    <li><strong>Care is operational.</strong> Collaboration is dialog-driven, humane, and transparent about trade-offs.</li>
+  </ul>
+</div>
 
-1. **Scientific integrity is non-negotiable.** If rigor is at risk, the work pauses.
-2. **Collaboration over hand-offs.** Interpretation is shared, dialog-driven, and transparent.
-3. **Microbes deserve respect.** Language treats them as ecological actors, not fear-based symbols.
-4. **Ethics guide scope.** MicroMosaic will say no to hype, misrepresentation, or work misaligned with its values.
 
-## How Engagements Work
+## How Engagements Feel
 
-- Discovery conversations surface scientific context, constraints, and desired outcomes.
-- Scopes are co-created and right-sized—anything from rapid audits to multi-month partnerships.
-- Deliverables pair technical outputs with interpretation, recommendations, and communication assets.
+<div class="about-highlight crimson align-right">
+  <ul>
+    <li><strong>Discovery & Scoping</strong> – We map the scientific problem, existing data, and desired outcomes together. No black boxes.</li>
+    <li><strong>Collaboration</strong> – Expect shared documents, working sessions, and transparent decision logs. MicroMosaic often functions as a fractional teammate.</li>
+    <li><strong>Delivery & Transition</strong> – Reports and case studies arrive with interpretation, next steps, and materials you can hand directly to stakeholders.</li>
+  </ul>
+</div>
 
-## Why Clients Choose MicroMosaic
+## Roots & Reach
 
-Because they need:
+<div class="about-highlight golden align-left">
+  <p>I work remotely and collaborate comfortably across time zones. I’ve helped scale fungal and bacterial R&D in environmental biotech, supported multi-lab plant–microbe research programs, and built science communication projects from the ground up — including conference programming and collaborative sci-comm work. MicroMosaic is launching to bring that same blend of rigor and creative translation to new partners who need science that holds up and connects.</p>
+</div>
 
-- Deep microbial and multi-omics fluency without building an internal team yet.
-- Data governance, literacy, and AI conversations grounded in lived scientific operations.
-- Science communication that is creative without being careless.
-- A collaborator who brings clarity, empathy, and follow-through.
-
-## Who This Practice Serves
-
-Environmental biotech companies, agricultural and soil teams, NGOs, academic labs, mission-driven startups, and community science organizations who want their data to hold meaning—not just metrics.
-
-Have a project or pillar in mind? [Start a conversation]({{ '/contact/' | relative_url }}).
+Ready to work together? [Send a note]({{ '/contact/' | relative_url }}) and let’s start the conversation.

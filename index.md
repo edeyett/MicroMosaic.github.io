@@ -4,34 +4,65 @@ title: Home
 permalink: /
 ---
 <section class="hero">
-  <div class="hero-inner">
-    <p class="badge">Microbiology · Data · Story</p>
-    <h1>MicroMosaic helps organizations turn complex biological data into clear insight, credible decisions, and compelling scientific narratives.</h1>
-    <p class="subhead">Deep microbiology expertise + enterprise data strategy + science communication that keeps rigor intact.</p>
-    <a class="cta" href="{{ '/contact/' | relative_url }}">Start a conversation</a>
-    <a class="cta secondary" href="{{ '/services/' | relative_url }}">Explore services</a>
+  <div class="container hero-center">
+    <img class="hero-logo-large" src="{{ '/branding/logo.png' | relative_url }}" alt="MicroMosaic logo">
+    <h2>Elizabeth Deyett, PhD</h2>
+    <p class="hero-subline"><strong>Systems · Strategy · Stories</strong></p>
+    <p class="hero-pitch"><strong>From microbial bioinformatics to data strategy to science communication, MicroMosaic supports organizations with focused, independent expertise—grounded in rigor, clarity, and scientific integrity.</strong></p>
+    <div>
+      <span class="badge">Microbial bioinformatics</span>
+      <span class="badge">Data strategy &amp; management</span>
+      <span class="badge">Science communication</span>
+    </div>
+    <div class="cta-row">
+      <a class="cta" href="{{ '/contact/' | relative_url }}">Start a conversation</a>
+      <a class="cta secondary" href="{{ '/case-studies/' | relative_url }}">See case studies</a>
+    </div>
   </div>
 </section>
 
 <section class="section">
   <div class="container">
-    <h2>Integrated pillars, one partner</h2>
-    <p class="lede">MicroMosaic is a hybrid scientific practice: part bioinformatics consultant, part data strategist, part science communicator.</p>
-    <div class="pillars-grid">
-      <article class="card">
-        <h3>Data, Bioinformatics & Analysis</h3>
-        <p>Genome-scale analysis across bacteria and fungi, metagenomics, amplicon, RNA-seq, and multi-omics interpretation complete with visual reports.</p>
-        <p><strong>Outputs:</strong> Clean pipelines, annotated results, interpretive summaries, publication-ready figures.</p>
+    <h2>About the practice</h2>
+    <div class="about-highlight golden" style="display:grid;grid-template-columns:minmax(280px,1.3fr) minmax(200px,0.7fr);gap:1.5rem;align-items:center;">
+      <div>
+        <p>I’m a microbial ecologist with a PhD in Genetics, Genomics &amp; Bioinformatics, rooted in environmental microbiology. Field work trained me to pay attention to ecosystems as living systems, not just sample sites. Graduate research gave me the tools to read genomes with precision. Collaboration taught me how to listen across perspectives and motivations. Industry work taught me how quickly good science gets undermined when analysis, data systems, and communication drift into separate lanes.</p>
+        <p>MicroMosaic is the studio where those lanes stay connected—offered as focused services in microbial bioinformatics, data strategy and management, and science communication. This intersection is where I’m most alive: microbes, computation, and story, all in service of work that’s rigorous, legible, and actually useful.</p>
+      </div>
+      <div style="display:flex;justify-content:flex-end;align-items:center;">
+        <img src="{{ '/branding/portraits/3.png' | relative_url }}" alt="Elizabeth portrait" style="max-width:260px;">
+      </div>
+    </div>
+    <div class="pillars-grid" style="margin-top:2rem;">
+      <article class="card pop-teal">
+        <h3>What guides the work</h3>
+        <ul>
+          <li>Rigor first — methods, assumptions, and limits made explicit</li>
+          <li>Clear communication without oversimplifying or talking down</li>
+          <li>Ecological respect for microbes and the systems they shape</li>
+          <li>Design and storytelling that make science hard to ignore</li>
+          <li>Microbe-first wonder paired with serious scientific standards</li>
+        </ul>
       </article>
-      <article class="card">
-        <h3>Science Communication & Translation</h3>
-        <p>Research-grounded storytelling for stakeholders, funders, scientists, and the public. Reports, podcasts, blogs, workshops, and visual abstracts.</p>
-        <p><strong>Outputs:</strong> Clear narratives, editorial support, audio strategy, data-to-story translation.</p>
+      <article class="card pop-gold">
+        <h3>How we work together</h3>
+        <ul>
+          <li>Flexible engagement: embedded teammate or independent lead</li>
+          <li>Clear scoping, timelines, and a written statement of work</li>
+          <li>Direct collaboration with scientists and stakeholders when embedded</li>
+          <li>Autonomy when needed—share inputs, receive clean outputs</li>
+          <li>Durable handoffs with documentation and decision notes</li>
+        </ul>
       </article>
-      <article class="card">
-        <h3>Data Strategy, Governance & Leadership</h3>
-        <p>Company-wide data architecture, governance, literacy, and AI-readiness that align business goals with scientific integrity.</p>
-        <p><strong>Outputs:</strong> Governance frameworks, working groups, cloud/LIMS design, leadership-aligned roadmaps.</p>
+      <article class="card pop-crimson">
+        <h3>Who benefits</h3>
+        <ul>
+          <li>Environmental biotech and climate-focused teams</li>
+          <li>Microbial R&amp;D groups in industry or academia</li>
+          <li>NGOs translating science for funders and communities</li>
+          <li>Mission-driven startups building with microbial systems</li>
+          <li>Journals, conferences, and science communication partners</li>
+        </ul>
       </article>
     </div>
   </div>
@@ -39,34 +70,54 @@ permalink: /
 
 <section class="highlight-section">
   <div class="container">
-    <h2>Who MicroMosaic serves</h2>
-    <p>Microbiology-forward but not microbiology-exclusive.</p>
+    <h2>Selected services</h2>
     <div class="pillars-grid">
-      <div class="card">
-        <h3>Environmental & Climate Biotech</h3>
-        <p>Microbe-first R&D programs needing reproducible analysis plus strategic guidance before scaling.</p>
-      </div>
-      <div class="card">
-        <h3>Agriculture & Soil Teams</h3>
-        <p>Plant-microbe researchers, NGOs, and consortia translating complex datasets to partners and policymakers.</p>
-      </div>
-      <div class="card">
-        <h3>Mission-Driven Organizations</h3>
-        <p>Academic labs, nonprofits, and startups who need science communication, data governance, or fractional bioinformatics leadership.</p>
-      </div>
+      <article class="card service-card pop-teal">
+        <h3>Bioinformatics &amp; Analysis</h3>
+        <ul>
+          <li>Genome, metagenome, amplicon, and RNA-seq pipelines</li>
+          <li>Comparative genomics and phylogenetics</li>
+          <li>Interpretation sessions + visualization libraries</li>
+          <li>Exploratory vs production-grade pipeline design</li>
+          <li>QC strategy, metadata support, and handoff docs</li>
+        </ul>
+      </article>
+      <article class="card service-card pop-gold">
+        <h3>Science Communication</h3>
+        <ul>
+          <li>Editorial support for manuscripts, journals, and feature stories</li>
+          <li>Podcast strategy, interviews, and sponsored series</li>
+          <li>Stakeholder briefs, decks, and narrative translation</li>
+          <li>Workshops on data literacy and interpretation</li>
+          <li>Science events, conference materials, and creative campaigns</li>
+        </ul>
+      </article>
+      <article class="card service-card pop-crimson">
+        <h3>Data Strategy &amp; Governance</h3>
+        <ul>
+          <li>Roadmapping for data governance and literacy</li>
+          <li>LIMS/ELN evaluation, metadata schema, and standards</li>
+          <li>Cloud architecture and cost-aware infrastructure</li>
+          <li>AI readiness, tooling audits, and adoption playbooks</li>
+          <li>Fractional leadership or advisory partnerships</li>
+        </ul>
+      </article>
+    </div>
+    <div class="cta-row" style="margin-top:2rem;">
+      <a class="cta secondary" href="{{ '/services/' | relative_url }}">Explore all services</a>
     </div>
   </div>
 </section>
 
 <section class="section">
   <div class="container">
-    <h2>Recent case studies</h2>
-    <p class="lede">Proof that rigor, infrastructure, and story can live together.</p>
+    <h2>Selected work</h2>
+    <p class="lede">Infrastructure builds, culture change, and science storytelling—always microbiology-forward.</p>
     <div class="case-grid">
       {% assign featured_cases = site.case_studies | sort: 'title' %}
       {% for case in featured_cases %}
-      <article class="card">
-        <p class="case-tag">{{ case.services | join: ' · ' }}</p>
+      <article class="card {% cycle 'pop-teal','pop-gold','pop-crimson' %}">
+        <p class="case-tag">{{ case.context }}</p>
         <h3>{{ case.title }}</h3>
         <p>{{ case.summary }}</p>
         <a class="cta secondary" href="{{ case.url | relative_url }}">Read case study</a>
@@ -79,7 +130,7 @@ permalink: /
 <section class="section">
   <div class="container contact-panel">
     <h2>Ready to co-design data, infrastructure, and story?</h2>
-    <p>Bring your questions, constraints, and context. MicroMosaic brings rigorous science, clear strategy, and communication that travels.</p>
+    <p>Bring your questions, constraints, and context. I’ll bring rigorous science, clear strategy, and communication that travels.</p>
     <a class="cta" href="{{ '/contact/' | relative_url }}">Talk through your project</a>
   </div>
 </section>
