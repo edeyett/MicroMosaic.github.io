@@ -5,7 +5,7 @@ description: >-
   credible decisions, and compelling narratives rooted in rigorous microbiology,
   data strategy, and science communication.
 baseurl: ""
-url: ""
+url: "https://micromosaic.github.io"
 permalink: pretty
 collections:
   case_studies:
