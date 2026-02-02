@@ -10,7 +10,9 @@ Email is the fastest way to reach MicroMosaic. Share context, constraints, and t
 
 Prefer a quick intro call? Book a 30-minute slot to connect.
 
-<a class="cta" href="https://calendly.com/edeyett-proton/30min">Schedule a meeting</a>
+<div class="cta-row">
+  <a class="cta" href="https://calendly.com/edeyett-proton/30min">Schedule a meeting</a>
+</div>
 
 - **Email:** [{{ site.email }}](mailto:{{ site.email }})
 - **Typical response time:** 2–3 business days

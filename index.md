@@ -15,7 +15,7 @@ permalink: /
       <span class="badge">Science communication</span>
     </div>
     <div class="cta-row">
-      <a class="cta" href="{{ '/contact/' | relative_url }}">Start a conversation</a>
+      <a class="cta" href="https://calendly.com/edeyett-proton/30min">Start a conversation</a>
       <a class="cta secondary" href="{{ '/case-studies/' | relative_url }}">See case studies</a>
     </div>
   </div>
